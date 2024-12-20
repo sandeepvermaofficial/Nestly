@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        .login_main{
+            text-align: center;
+            max-height: 100vh;
+            width: 500px;
+            margin-top: 100px;
+            margin-left: 500px;
+            margin-right: 500px;
+            border-radius: 8px;
+            padding:20px
+
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg bg-primary" style="color: white;" >
+            <div class="container-fluid">
+              <img class="navbar-brand"  style="width: 90px;" src="/image/logo-nestly.jpg" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/nestly/index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-disabled="true">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-disabled="true">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-disabled="true" href="/nestly/register.html">signup</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-warning" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <div class="login_main" style="background-color: rgb(40, 191, 166);">
+        <div>
+
+        </div>
+        <h2>Login</h2><br>
+        <div>
+            <form action="">
+                <label for="">Email</label>
+                <input type="email" name="" id="f_inp_text" placeholder="Enter Email" style="padding: 6px; border-radius: 6px; color: black; border: none;"><br><br>
+                <label for="">Password</label>
+                <input type="password" name="" id="l_inp_text" placeholder="Enter Password" style="padding: 6px; border-radius: 6px; color: black; border: none;"><br><br>
+                <button id="button" type="submit" style="width: 200px; background-color: lightblue; border: none; border-radius: 8px; padding: 8px;">Login</button>
+               </form>
+        </div>
+       
+    </div>
+
+
+    <script>
+      let f_txt=document.querySelector("#f_inp_text");
+      let l_txt=document.querySelector("#l_inp_text");
+
+      let btn=document.querySelector("#button");
+
+      btn.addEventListener("click",welcome)
+
+      function welcome(){
+          let f_txt_val=f_txt.value;
+          let l_txt_val=l_txt.value;
+
+          if(f_txt_val=="" && l_txt_val==""){
+              alert("Please Enter Email and Password");
+          }
+
+          else if(f_txt_val=="") {
+              alert("please Enter Email")
+          } 
+
+          else if(l_txt_val=="") {
+              alert("please Enter Password")
+          }
+          else if(l_txt_val.length<6){
+              alert("PassWord Should be 6 Digit Long:")
+          }
+
+          else
+          alert(`Hi , ${f_txt_val} welcome to our Website`)
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+body{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at 50% 50%, #090a0f 0%, #000000 100%);
+    position: sticky;
+    margin-left: -1%;
+}
+
+.header{
+    display: flex;
+    height: 4%;
+    width: 49.5%;
+    background: rgba(12, 12, 14, 0.9);
+    margin: -0.5%;
+    padding: 1.5% 26%;
+    gap: 22%;
+    box-shadow: 0 4px 15px rgb(0, 238, 255);
+    color: #00fffb;
+    
+}
+
+.EnvolBlog{
+    font-size: 40px;
+    margin-left: -3rem;
+}
+
+.nav{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    gap: 15%;
+    font-size: 25px;
+    color: #00fffb;
+    margin-top: 1%;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #00fbff;
+}
+.nav a:hover{
+    text-shadow: 0 4px 15px rgb(0, 255, 225);
+    color: #07dbd7;
+}
+
+.categories-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62%;
+    position: relative;
+    margin: 2rem 21%;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 48rem; /* This ensures only 4 categories are visible at once */
+    scroll-behavior: smooth;
+    
+}
+
+.category {
+    height: 5rem;
+    width: 17rem; /* Set width to 15rem */
+    background-color: #00fffb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centering content */
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-radius: 5px;
+    background-color: #00fbff;
+}
+
+.scroll-button {
+    background-color: rgb(49, 49, 60);
+    border: none;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5rem;
+    
+}
+
+.left-scroll {
+    left: 1rem;
+}
+
+.right-scroll {
+    right: 1rem;
+}
+
+.scroll-button i {
+    color: #00fffb;
+}
+
+.content{
+    height: 60%;
+    width: 100%;
+    margin-top: 4rem;
+}
+.trendingBlog{
+    width: 58%;
+    height: 15rem;
+    display: flex;
+    gap: 5rem;
+    margin-left: 22%;
+    
+}
+
+.text{
+    width: 65%;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    color: White;
+}
+
+.type{
+    color: red;
+}
+
+.tag h2{
+    color: #00fbff;
+}
+
+.TImage{
+    width: 27%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.TImage img{
+    height: 100%;
+    width: 100%;
+}
+
+.otherBlogs{
+    background-color:#090a0f;
+    height: 38%;
+    width: 78%;
+    margin-top: 3rem;
+    padding-left: 23%;
+    padding-top: 1rem;
+    box-shadow: 0 4px 15px rgb(0, 238, 255);
+}
+
+.blogsec {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2.2rem;
+    justify-content: center;
+    margin-left: -2rem;
+}
+
+.blogs1 {
+    height: 14rem;
+    width: 11rem;
+    background: linear-gradient(135deg, #66FCF1, #0e2221);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    
+}
+
+.blogs1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blogs1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.blogs1:hover::before {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.blogs1 .blog-title {
+    z-index: 2;
+    margin-top: 9rem;
+    padding-left: 1rem;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.blogs1 .read-more {
+    z-index: 2;
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: white;
+    padding-left: 5.5rem;
+    padding-top: 0.7rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    transition: background 0.3s ease;
+}
+
+.blogs1:hover .read-more {
+    color: #66FCF1;
+}
+
+#blog1{
+    background-image: url('');
+}
+
+
