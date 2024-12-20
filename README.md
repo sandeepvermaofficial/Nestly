@@ -1,6 +1,6 @@
 # Nestly A real-Estate web app
 
-#visit by:
+# visit by:
 https://sandeepvermaofficial.github.io/Nestly/
 
 # feature
